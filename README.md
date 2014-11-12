@@ -1,4 +1,35 @@
-# Embercliapp
+#Embercliapp
+
+This project was used to get fimilar with Ember-CLI. I used the initial Bloggr getting started example and reproduced it using Ember-Cli which is going to be the default way to develop, manage dependencies and build with Ember Apps going forward. Note it leverages existing technologies such as Bower to install and manage dependencies, Broccili as a build tool. 
+
+#Ember Lessons Learnt
+
+Below are some of the lessons learnt using Ember and EmberCli. Please check out the #emberjs and #ember-cli IRC channels for further help.
+
+
+###Ember Lessons Learnt:
+
+-{{bind-attr only works with controllers
+-Mix-in defined for the ApplicationController is inhertied for all the nested controllers
+-There is a difference between Ember.Controller, Ember.ArrayController, and Ember.ObjectController. Object templates must be backed by EmberObjectController.
+-Always use  this._super(controller,model); when override setupController method on Route.
+
+
+
+###Ember Cli-Lessons:
+
+-Different type of blueprints
+-Installing/importing dependency: 
+  -bower install --save showdown
+  -app.import('bower_components/showdown/src/showdown.js');
+  -(I think this Step is not required if using the directive below)Added the global to the .jshintrc "predef": [
+    "document",
+    "window",
+    "-Promise",
+    "Showdown"
+  ]
+  - import' the dependency using: /* global Showdown */
+
 
 This README outlines the details of collaborating on this Ember application.
 

@@ -1,3 +1,17 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+  		  <ul class="nav navbar-nav">
+  		  	  <li {{bind-attr class="isHome"}} {{action "clickedAction" 'isHome'}}>{{#link-to 'index'}}Home{{/link-to}}</li>
+			  <li {{bind-attr class="isPosts"}} {{action "clickedAction" 'isPosts'}}>{{#link-to 'posts' }}Posts{{/link-to}}</li>
+			  <li {{bind-attr class="isAbout"}} {{action "clickedAction" 'isAbout'}}>{{#link-to 'about'}}About{{/link-to}}</li>
+          </ul>
+  </div>
+</nav>
 
 {{outlet}}
+
+
+
+
+
+

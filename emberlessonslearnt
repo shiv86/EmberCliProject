@@ -1,0 +1,21 @@
+Ember Lessons Learnt:
+
+1.{{bind-attr only works with controllers
+2.Mix-in defined for the ApplicationController is inhertied for all the nested controllers
+3. Always use  this._super(controller,model); when override setupController method on Route.
+
+
+
+Ember Cli-Lessons:
+1. Different type of blueprints
+2. Installing/importing dependency: 
+ >2.1 bower install --save showdown
+ >2.2 app.import('bower_components/showdown/src/showdown.js');
+ >2.3 (I think this Step is not required if using the directive below)Added the global to the .jshintrc "predef": [
+    "document",
+    "window",
+    "-Promise",
+    "Showdown"
+  ]
+ >2.4 'import' the dependency using: /* global Showdown */
+
