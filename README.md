@@ -7,8 +7,11 @@ This project was used to get fimilar with Ember-CLI. I used the initial Bloggr g
 Below are some of the lessons learnt using Ember and EmberCli. Please check out the #emberjs and #ember-cli IRC channels for further help.
 
 1.{{bind-attr only works with controllers
+
 2.Mix-in defined for the ApplicationController is inhertied for all the nested controllers
+
 3.There is a difference between Ember.Controller, Ember.ArrayController, and Ember.ObjectController. Object templates must be backed by EmberObjectController.
+
 4.Always use  this._super(controller,model); when override setupController method on Route.
 
 
@@ -19,13 +22,16 @@ Below are some of the lessons learnt using Ember and EmberCli. Please check out 
 2.Installing/importing dependency: 
 
   2.1bower install --save showdown
+
   2.2appimport('bower_components/showdown/src/showdown.js');
+
   2.3(I think this Step is not required if using the directive below)Added the global to the .jshintrc "predef": [
     "document",
     "window",
     "-Promise",
     "Showdown"
   ]
+
   2.4 import' the dependency using: /* global Showdown */
 
 
